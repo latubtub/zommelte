@@ -139,7 +139,7 @@ Partial Class Form1
         Me.Controls.Add(Me.LabelInscription)
         Me.Controls.Add(Me.BValider)
         Me.Name = "Form1"
-        Me.Text = "s"
+        Me.Text = "Inscription"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
