@@ -30,4 +30,15 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub BtAjouterPhoto_Click(sender As Object, e As EventArgs) Handles BtAjouterPhoto.Click
+
+        Dim IDphoto As String
+        OpenFileDialog1.Filter = "fichier image|*.jpg"
+        OpenFileDialog1.InitialDirectory = "C:\Users\AIFOR\Desktop\photosID"
+        OpenFileDialog1.ShowDialog()
+        IDphoto = OpenFileDialog1.FileName
+        BoxPhotoID.ImageLocation = IDphoto
+
+    End Sub
 End Class

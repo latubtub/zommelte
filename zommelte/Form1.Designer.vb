@@ -31,8 +31,9 @@ Partial Class Form1
         Me.Icodepostal = New System.Windows.Forms.TextBox()
         Me.Temail = New System.Windows.Forms.TextBox()
         Me.BtAjouterPhoto = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BoxPhotoID = New System.Windows.Forms.PictureBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        CType(Me.BoxPhotoID, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BValider
@@ -40,7 +41,7 @@ Partial Class Form1
         Me.BValider.BackColor = System.Drawing.Color.Blue
         Me.BValider.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BValider.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.BValider.Location = New System.Drawing.Point(374, 259)
+        Me.BValider.Location = New System.Drawing.Point(374, 266)
         Me.BValider.Name = "BValider"
         Me.BValider.Size = New System.Drawing.Size(101, 34)
         Me.BValider.TabIndex = 1
@@ -114,13 +115,17 @@ Partial Class Form1
         Me.BtAjouterPhoto.Text = "Ajouter une photo"
         Me.BtAjouterPhoto.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'BoxPhotoID
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(54, 63)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(127, 102)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.BoxPhotoID.Location = New System.Drawing.Point(54, 63)
+        Me.BoxPhotoID.Name = "BoxPhotoID"
+        Me.BoxPhotoID.Size = New System.Drawing.Size(127, 102)
+        Me.BoxPhotoID.TabIndex = 10
+        Me.BoxPhotoID.TabStop = False
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Form1
         '
@@ -128,7 +133,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Chartreuse
         Me.ClientSize = New System.Drawing.Size(514, 323)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.BoxPhotoID)
         Me.Controls.Add(Me.BtAjouterPhoto)
         Me.Controls.Add(Me.Temail)
         Me.Controls.Add(Me.Icodepostal)
@@ -140,7 +145,7 @@ Partial Class Form1
         Me.Controls.Add(Me.BValider)
         Me.Name = "Form1"
         Me.Text = "Inscription"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BoxPhotoID, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,5 +159,6 @@ Partial Class Form1
     Friend WithEvents Icodepostal As TextBox
     Friend WithEvents Temail As TextBox
     Friend WithEvents BtAjouterPhoto As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BoxPhotoID As PictureBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
